@@ -1,108 +1,121 @@
-#  NutriLens — Personalized Food Health Analyzer
+# NutriLens — Personalized Food Health Analyzer
 
-##  Overview
+## Overview
 
-NutriLens is a web-based application that analyzes packaged food ingredients and provides personalized health warnings and suggestions based on user conditions.
-
-It simplifies complex food labels into easy, actionable insights.
+NutriLens is a web-based application that analyzes packaged food ingredients and provides personalized health insights based on user conditions. It simplifies complex ingredient lists into clear, actionable decisions.
 
 ---
 
-##  Problem
+## Problem
 
-* People struggle to understand food labels
-* Harmful ingredients like sugar, oil, and sodium are hidden
-* No personalized guidance based on health conditions
-
----
-
-##  Solution
-
-NutriLens converts ingredient lists into clear health decisions tailored to the user.
+* Food labels are difficult for most people to understand
+* Harmful ingredients such as excess sugar, sodium, and additives often go unnoticed
+* There is no simple system for personalized dietary guidance
 
 ---
 
-##  Features (V1)
+## Solution
 
-* Select food items from a predefined list
-* Choose health condition:
+NutriLens uses a rule-based analysis system to evaluate ingredients and generate personalized health recommendations.
+
+---
+
+## How It Works
+
+1. User selects a food item
+2. Ingredient data is retrieved
+3. The analysis engine processes the ingredients
+4. Personalized suggestions are generated
+
+---
+
+## Features (Version 1)
+
+* Predefined food dataset
+* Health condition selection:
 
   * Diabetic
   * High Cholesterol
   * Weight Loss
-* Rule-based ingredient analysis
-* Personalized warnings and suggestions
-* Simple and clean output
+* Ingredient-level analysis
+* Clear and simple output
 
 ---
 
-##  How It Works
+## Tech Stack
 
-User selects food + condition
-↓
-Ingredients fetched from database
-↓
-Analysis engine applies rules
-↓
-Warnings & suggestions generated
-↓
-Result displayed
+* Python
+* Flask
+* HTML
+* CSS
 
 ---
 
-##  Tech Stack
+## Architecture
 
-* **Backend:** Python (Flask)
-* **Frontend:** HTML, CSS
-* **Data:** Python Dictionary
+User Input → Flask Route → Analysis Engine → Response
 
 ---
 
-##  Project Structure
+## Project Structure
 
-food-analyzer/
-│
-├── app.py
-├── data.py
-├── logic.py
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
-├── static/
-│   └── style.css
+```bash
+NutriLens/
+│── app.py
+│── logic.py
+│── data.py
+│── templates/
+│── static/
+│── requirements.txt
+│── README.md
+```
 
 ---
 
-## ⚠️ Limitations
+## Run Locally
+pip install -r requirements.txt
+python app.py
 
-* Limited dataset
-* Rule-based system (not AI yet)
-* Not medical advice
-
----
-
-##  Future Scope
-
-* Image-based label scanning (OCR)
-* AI-powered analysis
-* Advanced personalization
 
 ---
 
-##  Why This Project?
+## Screenshots
 
-This project focuses on solving a real-world problem using simple but scalable backend logic.
+<img width="297" height="710" alt="image" src="https://github.com/user-attachments/assets/bd28cb41-4527-4eb3-a8de-7991d92fb70b" />
+<img width="314" height="715" alt="image" src="https://github.com/user-attachments/assets/d5347b6c-82f7-4260-8e99-c2ab5b604b9f" />
+<img width="610" height="299" alt="image" src="https://github.com/user-attachments/assets/c06c7c98-6fb8-43a6-adba-547355ab71aa" />
+<img width="684" height="383" alt="image" src="https://github.com/user-attachments/assets/93306284-9de5-41e6-b7ba-d209974592c1" />
 
----
-
-##  Author
-
-Alina — 1st semester student| Aspiring Developer
 
 ---
 
-##  Status
+## Live Demo
 
- Version 1 in progress
+
+
+---
+
+## Future Improvements
+
+* Real-time food search
+* Database integration
+* Improved UI/UX
+* AI-based recommendations
+
+---
+
+## Version
+
+V1: Rule-based ingredient analysis
+V2 (Planned): AI-powered system
+
+---
+
+## Learning Goal
+
+This project reflects my approach to learning backend by building real-world systems instead of only studying theory.
+---
+
+## Feedback
+
+Open to suggestions and improvements.
