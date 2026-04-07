@@ -53,7 +53,9 @@ NutriLens uses a rule-based analysis system to evaluate ingredients and generate
 
 ## Architecture
 
-User Input → Flask Route → Analysis Engine → Response
+The system follows a simple backend flow:
+
+User Input → Flask Route → Data Processing (logic.py) → Response Rendering (HTML Templates)
 
 ---
 
@@ -89,23 +91,22 @@ python app.py
 4.Open in browser:
 ```
 http://127.0.0.1:5000/
+```
 
 
 ---
-
 ## Screenshots
+### Input Interface
 <img width="513" height="302" alt="image" src="https://github.com/user-attachments/assets/5b03a027-8b2b-4347-88a2-0d64f5e5213e" />
+### Analysis Result (Unhealthy Case)
 <img width="656" height="887" alt="image" src="https://github.com/user-attachments/assets/bdfb3574-cc4d-4a1f-95c0-3b12a5c0776c" />
+### Analysis Result (Healthy Case)
 <img width="643" height="887" alt="image" src="https://github.com/user-attachments/assets/43b1c9eb-0a1a-42fb-bda1-bdd3400ef56a" />
-<img width="276" height="734" alt="image" src="https://github.com/user-attachments/assets/e1f9ca47-dc1b-4934-a5c0-c5a170ec7a1d" />
-
-
-
 ---
 
 ## Live Demo
 
-
+Currently not deployed. Planned for future versions.
 
 ---
 
@@ -128,6 +129,13 @@ V2 (Planned): AI-powered system
 ## Learning Goal
 
 This project reflects my approach to learning backend by building real-world systems instead of only studying theory.
+---
+## Key Learnings
+
+- Learned how to structure backend logic for real-world scenarios  
+- Understood data flow from user input to final output  
+- Improved problem-solving through iterative development  
+- Gained experience in connecting backend with frontend UI
 ---
 
 ## Feedback
